@@ -14,8 +14,65 @@
 button{
     width: 200px;
     padding: 10px;
+    border-radius: 10px;
     outline: none;
     border: none;
     background-color: brown;
     color: white;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.layer{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+}
+
+.container{
+    width: 350px;
+    height: 100px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    width: 30px;
+    font-weight: 800;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+    right:0;
+    margin: 40px;
+    border-radius: 6px;
+}
+
+.box {
+    width: 550px;
+    height: 1px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    -webkit-transition-duration: 1s;
+    transition-duration: 2s;
 }

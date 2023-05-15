@@ -11,12 +11,19 @@
 <body>
     <input type="text" placeholder="შეიყვანეთ რიცხვი" id="number">
 
-    <button type="button" onclick="">შემოწმება</button>
+    <button type="button" onclick="check()">შემოწმება</button>
 
-    <div class="layer">
+    <div class="layer" id="dark">
+
+           <button type="button" class="close" onclick="gamortva()">&times;</button>
+
            <div class="container">
-
+               <p id="message"></p>
            </div>
     </div>
+
+    <div class="box" id="box1"></div>
+
+    <button type="button" onclick="show()">show</button>
 </body>
 </html>
